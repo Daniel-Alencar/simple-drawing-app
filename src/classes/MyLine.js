@@ -6,7 +6,7 @@ class MyLine {
     this.y = winMouseY;
   }
   show() {
-    stroke(255);
-    line(this.px, this.py, this.x, this.y);
+    layer.stroke(255);
+    layer.line(this.px, this.py, this.x, this.y);
   }
 }

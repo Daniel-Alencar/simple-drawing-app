@@ -1,18 +1,16 @@
-let lines = [];
+let layer;
 
 function setup() {
   createCanvas(document.body.offsetWidth, document.body.offsetHeight);
+  layer = createGraphics(width, height);
 }
 
 function draw() {
   background(30);
 
   if(mouseIsPressed) {
-    let line = new MyLine();
-    lines.push(line);
+    new MyLine().show();
   }
 
-  for(let line of lines) {
-    line.show();
-  }
+  image(layer, 0, 0);
 }
