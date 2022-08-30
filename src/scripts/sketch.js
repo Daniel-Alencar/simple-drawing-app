@@ -1,7 +1,7 @@
 let layer;
 
 function setup() {
-  createCanvas(document.body.offsetWidth, document.body.offsetHeight);
+  createCanvas(document.body.offsetWidth - 100, document.body.offsetHeight - 100);
   layer = createGraphics(width, height);
 }
 
